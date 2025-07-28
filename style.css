@@ -7,6 +7,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+:root{
+    --color:
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -112,8 +116,8 @@ body{
     height:250px;
     top:0;
     background: linear-gradient(90deg,transparent,#1f2025);
-    z-index: -9;
-    right:-27px;
+    z-index: -8;
+    right:-60px;
 }
 .book .right .head_time::after{
     content:"";
@@ -129,7 +133,7 @@ body{
 .book .right .head_time h1{
     color:white;
     font-weight: 600;
-    z-index: 1;
+    z-index: -8;
 }
 .book .right .head_time .time{
     color:white;
@@ -166,6 +170,7 @@ body{
 .book .right .date_type{
     position: relative;
     display: flex;
+    width:103%;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
@@ -177,7 +182,7 @@ body{
 .book .right .date_type::before{
     content:" ";
     position: absolute;
-    width:102%;
+    width:103%;
     height:210px;
     left :-15px;
     top:0;
@@ -247,4 +252,29 @@ body{
 .book .right .crd li h6:nth-child(2):hover{
     
     background-color: #2d9d42;
+}
+.book .right .date_type .right_card li h6:nth-child(2){
+    
+    border-radius: 8px;
+    width:unset;
+    height:unset;
+    padding:1px 5px 0px 5px;
+
+}
+/* js active date */
+.h6_active{
+background:#2d9d42 !important;
+}
+.screen{
+    position: relative;
+    width:100%;
+    border-top:3px solid #2d9d42;
+    margin-top: 50px;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: inset 0px 10px 20px #1f2025;
+    text-align: center;
+    padding-top: 15px;
+    color:white;
+
 }
