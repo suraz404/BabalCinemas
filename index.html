@@ -345,11 +345,32 @@
             <h6>7 September 2025</h6>
           </div>
            <div class="card">
-            <h6>Seat 18</h6>
+            <h6>Seat 18 </h6>
             <h6>23:00</h6>
           </div>
+          <svg id="barcode"></svg>
+          <h5>Babal Cinemas</h5>
         </div>
-        <div class="tic_details"></div>
+        <div class="tic_details">
+          <div class="type">
+            4DX
+          </div>
+          <h5 class="pvr"> <span>Babal</span>Cinemas</h5>
+          <h1>Jawan</h1>
+          <div class="seat_det">
+             <div class="seat_cr">
+              <h6>Row</h6>
+              <h6>J</h6>
+             </div>
+             <div class="seat_cr"><h6>Row</h6>
+              <h6>J</h6></div>
+             <div class="seat_cr"><h6>Row</h6>
+              <h6>J</h6></div>
+             <div class="seat_cr"><h6>Row</h6>
+              <h6>J</h6></div>
+
+          </div>
+        </div>
       </div>
      </div>
 
@@ -371,6 +392,10 @@
 
     
   </div>         
-   <script src="app.js"></script> 
+   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.js" integrity="sha512-iKSej9nrLjdo6RKseKJcAZgTLj6ESwnUjj/vEFhuDhNTzULrk5RBPWeG2YIVWcI6hAIEccsY9Qf6+g39jpDfnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+    JsBarcode("#barcode" , "J18800792023");
+   </script>
 </body>
 </html>

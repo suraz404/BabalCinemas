@@ -452,11 +452,13 @@ background: greenyellow;
     display: flex;
     overflow: hidden;
     border: 1px solid white;
+    
 }
 .book .right .ticket .tic .barcode , .tic_details{
-    height:100% ;
+    height: 215px;
     width:100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    position: relative;
 }
 .book .right .ticket .tic .barcode{
     width:300px;
@@ -469,9 +471,63 @@ background: url(images/img/bg.png) no-repeat center -35px/cover;
 .book .right .ticket .tic .barcode .card{
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    padding: 0 10px;
+    
+   
 }
 .book .right .ticket .tic .barcode .card:nth-child(1){
     margin-top: 16px;
+}
+.book .right .ticket .tic .barcode .card h6{
+   width:60%;
+   text-align: left;
+   font-weight: 600;
+}
+.book .right .ticket .tic .barcode .card h6:nth-child(1){
+   width:40%;
+}
+.book .right .ticket .tic .barcode h5{
+    width: 100%;
+    text-align: center;
+}
+.book .right .ticket .tic .tic_details .type{
+    position: absolute;
+   left:20px;
+   top:7px;
+   font-weight: 600;
+   color:white;
+}
+
+.book .right .ticket .tic .tic_details .pvr{
+    position: absolute;
+   right:20px;
+   top:7px;
+   font-weight: 600;
+   color:white;
+}
+.book .right .ticket .tic .tic_details .pvr span{
+   
+   color:rgb(242, 222, 35);
+}
+.book .right .ticket .tic .tic_details h1{
+    position: absolute;
+    color: white;
+    left:20px;
+    bottom: 80px;
+}
+.book .right .ticket .tic .tic_details .seat_det {
+
+    position: absolute;
+    left:0px;
+    bottom: 8px;
+    width:100%;
+    height: 60px;
+    background: linear-gradient(270deg,transparent ,rgb(0,0,0,.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:25px ;
+
 }
