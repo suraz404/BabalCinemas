@@ -249,7 +249,7 @@ background: rgb(184, 184  , 184 , .5 )
 
 /* js active data */
 .h6_active{
-    background:#33812c;
+    background:#33812c !important;
 }
 
 .screen{
@@ -266,7 +266,7 @@ background: rgb(184, 184  , 184 , .5 )
     padding-top: 15px;
     letter-spacing: 5px;
     font-size: 12px;
-    display: none;
+  
 }
 .book .right .screen::before{
    content: "";
@@ -282,7 +282,7 @@ background: rgb(184, 184  , 184 , .5 )
 .book .right .chair{
     width:95%;
     margin: auto;
-    display: none;
+    
     /* border:1px solid white; */
 
 }
@@ -347,7 +347,7 @@ background: rgb(184, 184  , 184 , .5 )
 .book .right .details{
     width:100%;
     margin-top: 40px;
-    display:none;
+    
     align-items: center;
     justify-content: center;
 
@@ -355,6 +355,7 @@ background: rgb(184, 184  , 184 , .5 )
 .book .right .details .details_chair{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .book .right .details .details_chair li{
     position: relative;
@@ -440,6 +441,7 @@ background: greenyellow;
     border:1px solid white;
     margin-top: 20px;
     overflow-y: auto;
+    display: none;
 
 } 
 .book .right .ticket::-webkit-scrollbar {
@@ -527,7 +529,29 @@ background: url(images/img/bg.png) no-repeat center -35px/cover;
     background: linear-gradient(270deg,transparent ,rgb(0,0,0,.3));
     display: flex;
     align-items: center;
-    justify-content: center;
     padding-left:25px ;
 
+}
+.book .right .ticket .tic .tic_details .seat_det .seat_cr{
+    width:100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+
+}
+.book .right .ticket .tic .tic_details .seat_det .seat_cr h6:nth-child(1){
+    font-size: 11px;
+    font-weight: 600;
+}
+.book .right .ticket .tic .tic_details .seat_det .seat_cr h6:nth-child(2){
+    font-size: 20px;
+    font-weight: 800;
+}
+.book .right .ticket .tic .tic_details .seat_det .seat_cr h6:nth-child(2) span{
+
+    font-size: 11px;
+    font-weight: 600;
 }
