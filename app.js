@@ -56,7 +56,7 @@ let pvr = [
         b: [ 8, 5 ],
         a: [],
         price: [ 800, 800, 560, 560, 560, 560, 430, 430 ],
-        date: 1,
+        date: 5,
     
     },
    
@@ -78,7 +78,7 @@ let pvr = [
         b: [ 8, 5 ],
         a: [18,10],
         price: [ 800, 800, 560, 560, 560, 560, 430, 430 ],
-        date: 2,
+        date: 6,
     
     }
     
@@ -87,6 +87,13 @@ let pvr = [
 
 //filter
 
+
+
+let addSeats = (arr)=>{
+   arr.forEach((el,i)=>{
+    const {series,row_section,seat} =el;
+   })
+}
 let data = pvr.filter(obj=> obj.date === main_date && obj.movie === url_segment[1]);
 // console.log(data)
-
+addSeats(data)
