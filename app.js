@@ -88,10 +88,29 @@ let pvr = [
 //filter
 
 
-
+ 
 let addSeats = (arr)=>{
    arr.forEach((el,i)=>{
-    const {series,row_section,seat} =el;
+    const {series,row_section,seat,price , a, b , c , d , e , f , h , j} =el;
+
+    // create row
+     for (let seats = 0; seats < series.length; seats++) {
+        // console.log(series[index])
+        let row = document.createElement('div');
+        row.className = 'row';
+
+        // Create seats
+        for (let index = 0; index < seat.length; index++) {
+             let li = document.createElement('li');
+
+             let filter
+        
+            
+        }
+
+        
+     }
+     
    })
 }
 let data = pvr.filter(obj=> obj.date === main_date && obj.movie === url_segment[1]);
